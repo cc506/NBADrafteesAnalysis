@@ -10,11 +10,11 @@
 
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
 
-Predicting different NBA scnearios using Jupyter Notebook with Machine Learning. Still WIP
+Predicting different NBA scnearios with draft data using Jupyter Notebook with Machine Learning. Still WIP
 
 ## Contents
-* [Rookie Predictions](Rookie%20Predictions.ipynb) - using college statistics, we tried to predict the end of season statistics for the upcoming 2019 draft class.
-* [Combined Draft Predictions](draft_predictions.ipynb) - using a combined spread sheet of drafted colleges players over the last 20 years, we tried to predict their statistics to see if it matches their actual play throughout their career.
+* [Rookie Predictions](notebooks/Rookie%20Predictions.ipynb) - using college statistics, we tried to predict the end of season statistics for the upcoming 2019 draft class.
+* [Combined Draft Predictions](notebooks/draft_predictions.ipynb) - using a combined spread sheet of drafted colleges players over the last 20 years, we tried to predict their statistics to see if it matches their actual play throughout their career.
 
 ## Libaries Used
 ### Data Cleaning

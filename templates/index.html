@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags always come first -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+		<link href="css/styles.css" rel="stylesheet">
+		
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="author" content="">
+		<meta charset="utf-8">
+
+		<!-- <link href="../static/css/main.css" rel="stylesheet" type="text/css" /> -->
+
+		<!-- SUPPORT FOR IE6-8 OF HTML5 ELEMENTS -->
+		<!--[if lt IE 9]>
+					<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+			<![endif]-->
+
+		<!-- <link rel="shortcut icon" href="{{ url_for('static', filename='ico/favicon.ico') }}"> -->
+		{% block head %}
+			<title>{% block title %} Player Graph{% endblock %}</title>
+		{% endblock %}
+	</head>
+
+	<body>
+		<script src="../node_modules/jquery/dist/jquery.slim.min.js"></script>
+		<script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
+		<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="http://code.highcharts.com/highcharts.js"></script>
+		<script src="../static/js/graph.js"></script>
+
+		<nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+           <a class="navbar-brand mr-auto" href="#"><img src="../assets/nba-logo.png" height="30" width="41"></a>
+           <div class = "collapse navbar-collapse" id="Navbar">
+           </div>      
+        </div>
+    </nav>
+
+		<div id={{ chartID|safe }} class="chart" style="height: 100px; width: 500px"></div>
+		<script>
+			var chart_id = {{ chartID|safe }}
+			var series = {{ series|safe }}
+			var title = {{ title|safe }}
+			var xAxis = {{ xAxis|safe }}
+			var yAxis = {{ yAxis|safe }}
+			var chart = {{ chart|safe }}
+		</script>
+		
+	</body>
+</html>
